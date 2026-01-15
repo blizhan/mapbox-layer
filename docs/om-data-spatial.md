@@ -47,7 +47,7 @@ Image/Vector tile output
 ## 2. data_spatial 与 zoom 的关系
 
 ### 2.1 OM 文件不是多 zoom 数据
-- OM 文件只包含一份网格数据（Float32Array）。
+- OM 文件可以包含多个变量，但**每个变量**只对应一份网格数据（Float32Array），不包含多级 zoom 金字塔。
 - zoom 并不改变数据精度或存储层次，只影响渲染采样密度。
 
 ### 2.2 tile 坐标的作用
